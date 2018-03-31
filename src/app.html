@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Morten Brudvik</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -12,5 +12,17 @@
       </ul>
     </div>
   </nav>
+
   <router-view></router-view>
+
+  <nav class="footer fixed-bottom bg-dark">
+      <div class="p-2 footer-left text-muted small">
+        <span>
+          <i class="fa fa-copyright"></i>
+        </span>
+        <span>2018 Morten Brudvik </span>
+
+      </div>
+ 
+    </nav>
 </template>
