@@ -30,7 +30,7 @@ module.exports = ({production, server, extractCss, coverage, analyze} = {}) => (
   },
   entry: {
     app: ['aurelia-bootstrapper'],
-    vendor: ['bluebird'],
+    vendor: ['bluebird','jquery', 'bootstrap', 'popper.js'],
   },
   mode: production ? 'production' : 'development',
   output: {
@@ -97,7 +97,11 @@ module.exports = ({production, server, extractCss, coverage, analyze} = {}) => (
   plugins: [
     new AureliaPlugin(),
     new ProvidePlugin({
-      'Promise': 'bluebird'
+      'Promise': 'bluebird',
+      Popper: ['popper.js', 'default'],
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
     }),
     new ModuleDependenciesPlugin({
       'aurelia-testing': [ './compile-spy', './view-spy' ]
