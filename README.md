@@ -6,9 +6,10 @@ Simple SPA application with a navbar and a footer. Created with Bootstrap, Aurel
 * Clone it
 * Go into the directory
 * Run `npm install` or `yarn`
-* Run `au run --watch` to start it up on port 8080
-* or Run `au build --env prod` to build it to folder dist.
+* Run `au run --watch` to start it up on port 8080 or Run `au build --env prod` to build it to folder dist ready to deployed for production.
 
 NB! `au run` without the --watch is currently broken. Webpack issue..
+
+## Screenshot of the application
 
 ![Screenshot](docs/screenshot.png?raw=true "Screenshot of the application")
